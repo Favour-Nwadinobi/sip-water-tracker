@@ -20,7 +20,9 @@ During a busy day, it is easy to forget how much water you have already had. Sip
 - Undo the most recent entry
 - Save progress with browser `localStorage`
 - Automatically reset water entries when a new day begins while keeping the user's goal
-- Responsive mobile and desktop layout
+- Responsive two-column desktop layout that stacks cleanly on mobile
+- Personalized time-based greeting
+- Motivational quote banner with a custom illustration
 - Handles progress above 100% without breaking the UI
 
 ## Technologies and tools

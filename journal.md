@@ -31,11 +31,13 @@ Instead, I focused on the core loop:
 - Undo last entry
 - localStorage persistence
 - Automatic daily reset
-- Responsive interface
+- Enhanced responsive desktop and mobile grid layout
+- Personalized dynamic greeting
+- Inspirational quote card with an integrated illustration
 
 ## Design decisions
 
-I wanted Sip to feel light, fresh, and calm, so I used an off-white background, blue hydration accents, rounded components, and a simple card-based layout.
+I wanted Sip to feel light, fresh, and calm, so I used an off-white background, blue hydration accents, rounded components, and a simple card-based layout. I designed a two-column desktop interface that smoothly transitions to a stacked mobile view, ensuring usability across all screens. To keep the app encouraging, I added a personalized greeting based on the time of day and a subtle quote banner featuring a serene illustration.
 
 The water progress is the visual focus of the screen. Quick-add buttons sit directly below it so the most common action does not require opening another screen.
 

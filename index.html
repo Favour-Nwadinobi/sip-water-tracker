@@ -21,48 +21,62 @@
         <button class="icon-button" id="goalButton" type="button" aria-label="Change daily water goal" title="Change daily goal">⚙</button>
       </header>
 
-      <div class="intro">
-        <p class="eyebrow" id="greeting">Hello</p>
-        <h1>Stay hydrated today.</h1>
-        <p>Small sips add up. Keep going.</p>
-      </div>
-
-      <section class="progress-section" aria-label="Today's water progress">
-        <div class="progress-ring" id="progressRing" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-          <div class="progress-ring-inner">
-            <strong id="percentage">0%</strong>
-            <span>today</span>
+      <div class="tracker-layout">
+        <div class="layout-left">
+          <div class="intro">
+            <p class="eyebrow" id="greeting">Hello</p>
+            <h1>Stay hydrated today.</h1>
+            <p>Small sips add up. Keep going.</p>
           </div>
-        </div>
-        <div class="amount-copy">
-          <strong><span id="currentAmount">0</span> / <span id="goalAmount">2,000</span> ml</strong>
-          <span>Daily water goal</span>
-        </div>
-      </section>
 
-      <section class="glasses-section">
-        <div class="section-heading">
-          <h2>Today's glasses</h2>
-          <span id="glassCount">0 of 8</span>
+          <section class="progress-section" aria-label="Today's water progress">
+            <div class="progress-ring" id="progressRing" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div class="progress-ring-inner">
+                <strong id="percentage">0%</strong>
+                <span>today</span>
+              </div>
+            </div>
+            <div class="amount-copy">
+              <strong><span id="currentAmount">0</span> / <span id="goalAmount">2,000</span> ml</strong>
+              <span>Daily water goal</span>
+            </div>
+          </section>
         </div>
-        <div class="glasses" id="glasses" aria-label="Water glasses progress"></div>
-      </section>
 
-      <section class="quick-add-section">
-        <h2>Quick add</h2>
-        <div class="quick-actions">
-          <button class="add-button" type="button" data-amount="250">+250 ml</button>
-          <button class="add-button" type="button" data-amount="500">+500 ml</button>
-          <button class="secondary-button" id="customButton" type="button">Custom</button>
+        <div class="layout-right">
+          <section class="glasses-section">
+            <div class="section-heading">
+              <h2>Today's glasses</h2>
+              <span id="glassCount">0 of 8</span>
+            </div>
+            <div class="glasses" id="glasses" aria-label="Water glasses progress"></div>
+          </section>
+
+          <section class="quick-add-section">
+            <h2>Quick add</h2>
+            <div class="quick-actions">
+              <button class="add-button" type="button" data-amount="250">+250 ml</button>
+              <button class="add-button" type="button" data-amount="500">+500 ml</button>
+              <button class="secondary-button" id="customButton" type="button">Custom</button>
+            </div>
+          </section>
+
+          <div class="status-card" id="statusCard" aria-live="polite">
+            <span aria-hidden="true">💧</span>
+            <p id="statusText">2,000 ml left to reach your goal</p>
+          </div>
+
+          <div class="quote-card">
+            <img src="banner2.jpg" alt="Person drinking water" class="quote-img" />
+            <div class="quote-content">
+              <p>"Water is the driving force of all nature."</p>
+              <span>– Leonardo da Vinci</span>
+            </div>
+          </div>
+
+          <button class="undo-button" id="undoButton" type="button" disabled>↶ Undo last entry</button>
         </div>
-      </section>
-
-      <div class="status-card" id="statusCard" aria-live="polite">
-        <span aria-hidden="true">💧</span>
-        <p id="statusText">2,000 ml left to reach your goal</p>
       </div>
-
-      <button class="undo-button" id="undoButton" type="button" disabled>↶ Undo last entry</button>
     </section>
   </main>
 

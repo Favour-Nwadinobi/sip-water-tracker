@@ -56,7 +56,8 @@ function formatNumber(value) {
 
 function setGreeting() {
   const hour = new Date().getHours();
-  els.greeting.textContent = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
+  const timeOfDay = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
+  els.greeting.textContent = `${timeOfDay} Fay`;
 }
 
 function renderGlasses(total) {
